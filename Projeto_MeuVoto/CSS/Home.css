@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+header h1{
+    margin: 20px 50px;
+}
+
+@keyframes pulse {
+	0% {
+        transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgb(10, 125, 166);
+	}
+
+	70% {
+        transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(8, 2, 120, 0);
+	}
+    
+	100% {
+        transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(195, 5, 238, 0);
+	}
+}
+
+#buttonEntrar{
+    width: 300px;
+    height: 70px;
+    border-radius: 20px;
+    background-color:  #2bb381 ;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+#buttonEntrar:hover{
+    background-color:  #235341 ;
+}
+#buttonEntrar a{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 5% 35%;
+}
+
+#centerText{
+    margin: 300px 200px;
+    width: 700px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 35px;  
+}
+
+#TrianguloBandeira{
+    width: 900px;
+    height: 800px;
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    z-index: 1;
+}
+#CirculoBandeira{
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    z-index: 2;
+}
+#MapaBandeira{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    right: 300px;
+    top: 20%;
+    z-index: 3;
+}
+.blob {
+    background: rgba(19, 108, 120, 0.45);
+    border-radius: 100%;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+
+#buttonScroll{
+    background-color: #a2b1ac;
+    width: 20px;
+    height: 90px;
+    right: 0px;
+}
