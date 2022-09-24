@@ -1,12 +1,75 @@
 *{
     padding: 0;
-    border: 0;
     margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
 }
-header h1{
-    margin: 20px 50px;
+main{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type:y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-
+.container{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+#conteudo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 20px 0px;
+}
+#left{
+    margin-top: 200px;
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#left h2{
+    color: #284CB2;
+    font-size: 30px;
+}
+#left a{
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    background-color:#2bb381;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#left a:hover{
+    background-color:  #235341 ;
+}
+#right{
+    width: 60%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#mapaBandeira{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    z-index: 2;
+}
+ .blob {
+    background: rgba(19, 108, 120, 0.45);
+    border-radius: 100%;
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+} 
 @keyframes pulse {
 	0% {
         transform: scale(0.95);
@@ -22,75 +85,70 @@ header h1{
         transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(195, 5, 238, 0);
 	}
-}
-
-#buttonEntrar{
-    width: 300px;
-    height: 70px;
-    border-radius: 20px;
-    background-color:  #2bb381 ;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-#buttonEntrar:hover{
-    background-color:  #235341 ;
-}
-#buttonEntrar a{
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    padding: 5% 35%;
-}
-
-#centerText{
-    margin: 300px 200px;
-    width: 700px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 35px;  
-}
-
-#TrianguloBandeira{
-    width: 900px;
-    height: 800px;
+} 
+#trianguloBandeira{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    right: 0px;
-    top: 10%;
     z-index: 1;
 }
-#CirculoBandeira{
-    width: 350px;
-    height: 600px;
+#circuloBandeira{
+    width: 40%;
+    height:70%;
     position: absolute;
     right: 0px;
-    top: 20%;
+    top: 15%;
     z-index: 2;
 }
-#MapaBandeira{
-    width: 600px;
-    height: 600px;
+nav{
+    width: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     position: absolute;
-    right: 300px;
-    top: 20%;
+    right:20px;
     z-index: 3;
 }
-.blob {
-    background: rgba(19, 108, 120, 0.45);
-    border-radius: 100%;
-    margin: 10px;
-    height: 20px;
-    width: 20px;
-
-    transform: scale(1);
-    animation: pulse 2s infinite;
+nav a{
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px;
+    border-radius: 100px;
+    background-color: cyan;
 }
-
-#buttonScroll{
-    background-color: #a2b1ac;
-    width: 20px;
-    height: 90px;
-    right: 0px;
+/* FIM HEADER */
+article{
+    display: flex;
+    background-color: red;
+}
+#estaticas{
+    width: 50vw;
+    height: 745.5px;
+    background-color: #235341;
+}
+#video{
+   width: 50%;
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+h2{
+    width: 85%;
+    font-size: 35px;
+    text-align: center;
+    color: #284CB2;
+}
+.informativo{
+    width: 800px;
+    height: 160px;
+    margin: auto;
+    background-color: #284CB2;
+    display: flex;
+    flex-wrap: wrap;
+}
+.informativo video{
+    width: 20%;
+    height: 10px;
+    background-color: #eee;
 }
