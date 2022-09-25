@@ -38,17 +38,91 @@ main{
     color: #284CB2;
     font-size: 30px;
 }
-#left a{
-    width: 30%;
-    padding: 15px;
-    text-align: center;
-    color: #fff;
-    background-color:#2bb381;
-    border-radius: 10px;
-    font-size: 24px;
+a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
 }
-#left a:hover{
-    background-color:  #235341 ;
+   
+a.entrar {
+    width: 12rem;
+    height: auto;
+}
+   
+a.entrar .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #228B22;
+    border-radius: 1.625rem;
+}
+   
+a.entrar .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+a.entrar .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.10rem;
+    background: none;
+}
+   
+a.entrar .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.130rem solid #FFE000;
+    border-right: 0.130rem solid #FFE000;
+    transform: rotate(45deg);
+   }
+   
+a.entrar .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #284CB2;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+a:hover .circle {
+    width: 100%;
+   }
+   
+a:hover .circle .icon.arrow {
+    background: #FFE000;
+    transform: translate(1rem, 0);
+}
+   
+a:hover .button-text {
+    color: #FFE000;
 }
 #right{
     width: 60%;
@@ -116,8 +190,8 @@ nav a{
     width: 100%;
     height: 100%;
     margin: 10px 0px;
-    border-radius: 100px;
-    background-color: cyan;
+    border-radius: 10px;
+    background-color: #FFE000;
 }
 /* FIM HEADER */
 article{
@@ -127,7 +201,6 @@ article{
 #estaticas{
     width: 40%;
     height: 745.5px;
-    background-color: #235341;
 }
 #videos{
    width: 60%;
@@ -175,12 +248,12 @@ section{
 #txt{
     width: 35%;
     margin:80px 0px;
-    background-color: #FFE000;
 }
 #txt p{
     width: 90%;
     margin: auto;
     font-size: 26px;
+    color: #284CB2;
 }
 #nos{
     width: 70%;
@@ -202,10 +275,35 @@ section{
     background-image: linear-gradient(140deg,#00416A,#799F0C,#FFE000);
 }
 .grupo{
-    width: 90%;
+    width: 100%;
     height: 250px;
-    border: 2px solid;
     border-radius: 20px;
+}
+.fa-brands{
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+.fa-linkedin{
+    color: #fff;
+    background-color: #0077B7;
+}
+.fa-linkedin:hover{
+    transition: all .5s ease-in-out;
+    color: #0077B7;
+    background-color: #fff;
+}
+.fa-github{
+    color: #fff;
+    background-color: #183153d1;
+}
+.fa-github:hover{
+    transition: all .5s ease-in-out;
+    color: #183153;
+    background-color: #fff;
 }
 footer{
     width: 100%;
@@ -243,6 +341,16 @@ footer{
 #barra{
     border-right: 2px solid;
 }
+.fa-instagram{
+    color: #fff;
+    background-image: linear-gradient(90deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+.fa-facebook-f{
+    color: #fff;
+    background-color: #183153 ;
+}
+
 #rodape-direita{
     width: 50%;
 }
