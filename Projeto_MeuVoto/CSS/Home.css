@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: none;
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
 }
 main{
     width: 100vw;
@@ -147,7 +149,7 @@ h2{
 .informativo video{
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: #284db2c9;
 }
 .navegacao{
@@ -172,8 +174,13 @@ section{
 }
 #txt{
     width: 35%;
-    text-align: center;
-    background-color: #284CB2;
+    margin:80px 0px;
+    background-color: #FFE000;
+}
+#txt p{
+    width: 90%;
+    margin: auto;
+    font-size: 26px;
 }
 #nos{
     width: 70%;
@@ -200,5 +207,72 @@ section{
     border: 2px solid;
     border-radius: 20px;
 }
-
-
+footer{
+    width: 100%;
+    height: 745.5px;
+    display: flex;
+}
+#rodape-esquerda{
+    width: 45%;
+    height: 745.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#rodape-esquerda img{
+    width: 600px;
+    height: 500px;
+}
+#rodape-esquerda p{
+    width: 80%;
+    margin: auto;
+    color: #228B22;
+    font-size: 40px;
+    font-weight: 600;
+}
+#rodape-esquerda div{
+    width: 80%;
+    height: 70px;
+    text-align: left;
+}
+#rodape-esquerda span{
+    margin-right: 10px;
+    color: #228B22;
+    font-size: 20px;
+}
+#barra{
+    border-right: 2px solid;
+}
+#rodape-direita{
+    width: 50%;
+}
+#rodape-direita h3{
+    color: #228B22;
+    font-size: 28px;
+    margin-top: 15px;
+}
+aside{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+aside div{
+    border: 2px solid;
+    width: 45%;
+    height: 80%;
+    border-radius: 17px;
+}
+#txt-contatos{
+    width:100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#txt-contatos p{
+    margin-bottom: 25px;
+}
+#txt-contatos span{
+    color: #228B22;
+    font-weight: 800;
+}
