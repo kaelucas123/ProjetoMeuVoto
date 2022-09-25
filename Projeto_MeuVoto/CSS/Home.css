@@ -119,16 +119,20 @@ nav a{
 }
 /* FIM HEADER */
 article{
+    width: 100%;
     display: flex;
-    background-color: red;
 }
 #estaticas{
-    width: 50vw;
+    width: 40%;
     height: 745.5px;
     background-color: #235341;
 }
-#video{
-   width: 50%;
+#videos{
+   width: 60%;
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   flex-wrap: wrap;
 }
 h2{
     width: 85%;
@@ -137,21 +141,34 @@ h2{
     color: #284CB2;
 }
 .informativo{
-    width: 800px;
-    height: 160px;
-    margin: auto;
-    display: flex;
-    background-color: #284CB2;
+    width: 300px;
+    height: 300px;
 }
 .informativo video{
+    border-radius: 10px;
     width: 100%;
-    height: 10px;
-    background-color: #eee;
+    height: 100%;
+    background-color: #284db2c9;
+}
+.navegacao{
+    width: 30%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.circulo{
+    width: 100%;
+    height:70%;
+    position: absolute;
+    right: 0px;
+    top: 15%;
+    z-index: 2;
 }
 /* FIM INFORMATIVO */
 section{
     display: flex;
-    background-color: red;
+    width: 100%;
 }
 #txt{
     width: 35%;
@@ -159,19 +176,29 @@ section{
     background-color: #284CB2;
 }
 #nos{
-    width: 60%;
+    width: 70%;
     height: 745.5px;
-    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #532345;
 }
-
 .equipe{
     width: 30%;
     height: 315px;
     border-radius: 20px;
-    background-color: #228B22;
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(140deg,#00416A,#799F0C,#FFE000);
 }
+.grupo{
+    width: 90%;
+    height: 250px;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+
