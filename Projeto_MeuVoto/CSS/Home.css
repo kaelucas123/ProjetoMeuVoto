@@ -7,21 +7,18 @@
     text-decoration: none;
     font-family: 'Inter', sans-serif;
 }
-#backImg{
-    width: 100%;
-    height: 1080px;
-}
-#backImg img{
-    width: 100%;
-    height: 100%;
+body{
+    background-image: url(../Images/Icons.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    
 }
 main{
     width: 100vw;
     height: 100vh;
-    scroll-snap-type:y mandatory;
-    overflow-y: scroll;
     overflow-x: hidden;
-    background-color: #d8d8d8;
+    
 }
 .container{
     width: 100%;
@@ -241,14 +238,6 @@ h2{
     display: flex;
     align-items: center;
     position: relative;
-}
-.circulo{
-    width: 100%;
-    height:70%;
-    position: absolute;
-    right: 0px;
-    top: 15%;
-    z-index: 2;
 }
 /* FIM INFORMATIVO */
 section{
