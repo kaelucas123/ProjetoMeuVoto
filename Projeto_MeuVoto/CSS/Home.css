@@ -130,6 +130,8 @@ a:hover .circle .icon.arrow {
 a:hover .button-text {
     color: #FFE000;
 }
+
+                /* Essa parte é responsável pela bandeira á direita da página */
 #right{
     width: 60%;
     height: 800px;
@@ -183,24 +185,9 @@ a:hover .button-text {
     top: 15%;
     z-index: 2;
 }
-nav{
-    width: 10px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    position: absolute;
-    right:20px;
-    z-index: 3;
-}
-nav a{
-    width: 100%;
-    height: 100%;
-    margin: 10px 0px;
-    border-radius: 10px;
-    background-color: #38e747;
-}
-/* FIM HEADER */
+                /* Essa parte é responsável pela bandeira á direita da página */
+                /* FIM HEADER */
+                /* <!--Essa parte é responsável pela estaticas de voto eleitoral--> */
 article{
     width: 100%;
     display: flex;
@@ -209,6 +196,8 @@ article{
     width: 40%;
     height: 745.5px;
 }
+            /* <!--Essa parte é responsável pela estaticas de voto eleitoral--> */
+            /* Essa parte é responsável pelos videos do tiktok */
 #videos{
    width: 60%;
    display: flex;
@@ -239,11 +228,14 @@ h2{
     align-items: center;
     position: relative;
 }
-/* FIM INFORMATIVO */
+            /* Essa parte é responsável pelos videos do tiktok */
+            /* FIM INFORMATIVO */
+            /* Inicio sobre nós */
 section{
     display: flex;
     width: 100%;
 }
+            /* Essa parte é responsável pelo texto do porque criamos o site */
 #txt{
     width: 35%;
     margin:80px 0px;
@@ -262,6 +254,7 @@ section{
     align-items: center;
     flex-wrap: wrap;
 }
+/* espaço que cada um ocupa */
 .equipe{
     width: 30%;
     height: 315px;
@@ -278,6 +271,7 @@ section{
     height: 250px;
     border-radius: 20px;
 }
+        /* icones de github e facbook */
 .fa-brands{
     width: 35px;
     height: 35px;
@@ -304,6 +298,7 @@ section{
     color: #183153;
     background-color: #fff;
 }
+        /* icones de github e facbook */
 footer{
     width: 100%;
     height: 745.5px;
